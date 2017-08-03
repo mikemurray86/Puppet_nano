@@ -1,0 +1,6 @@
+# os/Debian.yaml
+---
+
+puppet_nano::install::nano_package: nano
+puppet_nano::config::nano_file:     puppet.nanorc
+puppet_nano::config::nano_dir:      /usr/share/nano
