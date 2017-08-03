@@ -49,4 +49,4 @@ This module forces the configuration file in place without care for an existing 
 
 ## Development
 
-I'm open to any improvements to module on it's github page. 
+I'm open to any improvements to this module on it's github page. 
