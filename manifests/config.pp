@@ -7,7 +7,8 @@ class puppet_nano::config (
     ensure => 'directory',
   }
   file { "$nano_dir/$nano_file" :
-    ensure => 'file',
-    source => "puppet:///modules/puppet_nano/${nano_file}"
+    ensure  => 'file',
+    source  => "puppet:///modules/puppet_nano/${nano_file}"
+    require => Class['puppet_nano::install'],
   }
 }

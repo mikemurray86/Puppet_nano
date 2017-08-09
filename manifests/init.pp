@@ -42,7 +42,12 @@
 #
 # Copyright 2017 Your name here, unless otherwise noted.
 #
-class puppet_nano {
-  include puppet_nano::install
-  include puppet_nano::config
+class puppet_nano (
+  $manage_syntax,
+) {
+  include puppet_nano::install # Must manage having nano installed or what's the point of using the module.
+
+  if $manage_syntax {
+    include puppet_nano::config
+  }
 }
